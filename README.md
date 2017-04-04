@@ -1,6 +1,6 @@
 # Debian-OpenCV3
 
-This docker image provides latest stable Debian, with Python 2.7 and master version of OpenCV3.
+This docker image provides latest stable Debian, with Python 2.7/3.4 and OpenCV 3.2.
 It also has version for RaspberryPi 3, see corresponding branch.
 
 # Installing Docker
