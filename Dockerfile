@@ -10,9 +10,9 @@ RUN apt-get update && apt-get install -qy \
 	python3-numpy python3-scipy python3-pip python3-setuptools \
 	wget \
 	xauth \
-	libjpeg-dev libtiff5-dev libjasper-dev libpng12-dev  libavcodec-dev libavformat-dev \
-	libswscale-dev libv4l-dev  libxvidcore-dev libx264-dev libgtk2.0-dev  libatlas-base-dev \
-	gfortran  python2.7-dev python3.4-dev build-essential pkg-config
+	libjpeg-dev libtiff5-dev libjasper-dev libpng12-dev libavcodec-dev libavformat-dev \
+	libswscale-dev libv4l-dev libxvidcore-dev libx264-dev libgtk2.0-dev libatlas-base-dev \
+	gfortran python2.7-dev python3.4-dev build-essential pkg-config
 
 # sklearn
 RUN pip install -U scikit-learn && pip3 install -U scikit-learn && rm -rf '/root/.cache/pip/'
@@ -53,7 +53,7 @@ RUN apt-get install -qy libv4l-0 libavcodec-dev libavformat-dev libavutil-dev \
 	apt-get purge -qy \
 	build-essential \
 	libjpeg-dev libtiff5-dev libjasper-dev libpng12-dev \
-	libv4l-dev libxvidcore-dev libx264-dev libgtk2.0-dev  libatlas-base-dev \
+	libv4l-dev libxvidcore-dev libx264-dev libgtk2.0-dev libatlas-base-dev \
 	gfortran pkg-config cmake && rm -rf /var/lib/apt/lists/*
 
 RUN mkdir /app
