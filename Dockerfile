@@ -40,10 +40,10 @@ RUN \
 		-D WITH_OPENCL=OFF \
 		-D WITH_OPENCLAMDBLAS=OFF \
 		-D WITH_OPENCLAMDFFT=OFF \
-		-D CMAKE_CXX_FLAGS="-O3 -mcpu=cortex-a53 -mfpu=neon-fp-armv8 -mfloat-abi=hard -ftree-vectorize -funsafe-math-optimizations" \
-		-D OPENCV_EXTRA_CXX_FLAGS="-mcpu=cortex-a53 -mfpu=neon-fp-armv8 -mfloat-abi=hard -ftree-vectorize -funsafe-math-optimizations" \
-		-D CMAKE_C_FLAGS="-O3 -mcpu=cortex-a53 -mfpu=neon-fp-armv8 -mfloat-abi=hard -ftree-vectorize -funsafe-math-optimizations" \
-		-D OPENCV_EXTRA_C_FLAGS="-O3 -mcpu=cortex-a53 -mfpu=neon-fp-armv8 -mfloat-abi=hard -ftree-vectorize -funsafe-math-optimizations" \
+		-D CMAKE_CXX_FLAGS="-O3 -mcpu=cortex-a53 -mfpu=neon-fp-armv8 -mfloat-abi=hard -funsafe-math-optimizations" \
+		-D OPENCV_EXTRA_CXX_FLAGS="-mcpu=cortex-a53 -mfpu=neon-fp-armv8 -mfloat-abi=hard -funsafe-math-optimizations" \
+		-D CMAKE_C_FLAGS="-O3 -mcpu=cortex-a53 -mfpu=neon-fp-armv8 -mfloat-abi=hard -funsafe-math-optimizations" \
+		-D OPENCV_EXTRA_C_FLAGS="-O3 -mcpu=cortex-a53 -mfpu=neon-fp-armv8 -mfloat-abi=hard -funsafe-math-optimizations" \
 		.. && make -j2 && make install && \
 	cd /root && rm -rf opencv-3.2.0 opencv_contrib-3.2.0
 
